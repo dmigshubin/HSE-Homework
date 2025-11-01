@@ -1,0 +1,35 @@
+(base) dmitrii@DMITRIYs-MacBook-Pro topic4 % alias ll='ls -la'
+(base) dmitrii@DMITRIYs-MacBook-Pro topic4 % ll
+total 96
+drwxr-xr-x  13 dmitrii  staff   416  1 нояб. 19:54 .
+drwxr-xr-x  19 dmitrii  staff   608  1 нояб. 18:10 ..
+-rw-r--r--@  1 dmitrii  staff  8196  1 нояб. 18:40 .DS_Store
+drwxr-xr-x   3 dmitrii  staff    96  1 нояб. 18:08 1
+-rw-r--r--   1 dmitrii  staff    48  1 нояб. 19:54 error.log
+-rw-r--r--   1 dmitrii  staff   400  1 нояб. 19:53 input.txt
+-rw-r--r--   1 dmitrii  staff     9  1 нояб. 19:54 output.txt
+-rw-r--r--   1 dmitrii  staff   519  1 нояб. 18:40 task1.sh
+-rw-r--r--   1 dmitrii  staff    73  1 нояб. 18:52 task2.sh
+-rw-r--r--   1 dmitrii  staff   360  1 нояб. 19:16 task3.sh
+-rw-r--r--   1 dmitrii  staff   131  1 нояб. 19:34 task4.sh
+-rw-r--r--   1 dmitrii  staff   689  1 нояб. 19:46 task5.txt
+-rw-r--r--   1 dmitrii  staff   118  1 нояб. 19:54 task6.sh
+(base) dmitrii@DMITRIYs-MacBook-Pro topic4 % cd ..
+(base) dmitrii@DMITRIYs-MacBook-Pro bash % ls
+backup_neology-homework_2025-10-16.tar.gz
+backup_script1.sh
+backup_script2.sh
+backup_script3.sh
+backup_script4.sh
+backup_script5.sh
+backup_sh
+lesson2210
+neology-homework_2025-10-16.tar.gz
+script1.sh
+script2.sh
+script3.sh
+script4.sh
+script5.sh
+sh
+topic4
+(base) dmitrii@DMITRIYs-MacBook-Pro bash % cd less<Tab>

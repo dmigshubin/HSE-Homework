@@ -1,0 +1,24 @@
+(base) dmitrii@DMITRIYs-MacBook-Pro topic4 % sleep 15 &
+sleep 30 &
+sleep 45 &
+[1] 64084
+[2] 64085
+[3] 64086
+(base) dmitrii@DMITRIYs-MacBook-Pro topic4 % jobs
+[1]    running    sleep 15
+[2]  - running    sleep 30
+[3]  + running    sleep 45
+(base) dmitrii@DMITRIYs-MacBook-Pro topic4 % fg %1
+[1]    running    sleep 15
+^Z
+zsh: suspended  sleep 15
+(base) dmitrii@DMITRIYs-MacBook-Pro topic4 % bg %1
+[1]    continued  sleep 15
+(base) dmitrii@DMITRIYs-MacBook-Pro topic4 % 
+[1]    done       sleep 15
+(base) dmitrii@DMITRIYs-MacBook-Pro topic4 % 
+[2]  - done       sleep 30
+(base) dmitrii@DMITRIYs-MacBook-Pro topic4 % 
+[3]  + done       sleep 45
+(base) dmitrii@DMITRIYs-MacBook-Pro topic4 % 
+
