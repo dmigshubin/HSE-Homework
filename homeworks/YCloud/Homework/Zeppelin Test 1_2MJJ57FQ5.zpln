@@ -1,0 +1,669 @@
+﻿{
+  "paragraphs": [
+    {
+      "text": "%spark.pyspark",
+      "user": "anonymous",
+      "dateUpdated": "2026-03-01T15:35:05+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1772379296124_1737120299",
+      "id": "paragraph_1772379296124_1737120299",
+      "dateCreated": "2026-03-01T15:34:56+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:2648"
+    },
+    {
+      "text": "%spark.pyspark\nprint(spark.version)\nprint(spark.sparkContext.master)\nspark.range(100000).count()",
+      "user": "anonymous",
+      "dateUpdated": "2026-03-01T15:35:21+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "3.3.2\nyarn\n100000\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "https://ui-c9qmpp3r5csais0rn98g-rc1b-dataproc-c-s71342hl0sgqlsci-35867.dataproc-ui.yandexcloud.net/jobs/job?id=2",
+              "$$hashKey": "object:3069"
+            },
+            {
+              "jobUrl": "https://ui-c9qmpp3r5csais0rn98g-rc1b-dataproc-c-s71342hl0sgqlsci-35867.dataproc-ui.yandexcloud.net/jobs/job?id=3",
+              "$$hashKey": "object:3070"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1772379308859_1608464042",
+      "id": "paragraph_1772379308859_1608464042",
+      "dateCreated": "2026-03-01T15:35:08+0000",
+      "dateStarted": "2026-03-01T15:35:21+0000",
+      "dateFinished": "2026-03-01T15:35:29+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:2649"
+    },
+    {
+      "text": "%spark.pyspark\nrdd = sc.parallelize([1,2,3,4,5])\nrdd.map(lambda x: x * 2).collect()",
+      "user": "anonymous",
+      "dateUpdated": "2026-03-01T15:36:22+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "[2, 4, 6, 8, 10]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "https://ui-c9qmpp3r5csais0rn98g-rc1b-dataproc-c-s71342hl0sgqlsci-35867.dataproc-ui.yandexcloud.net/jobs/job?id=4",
+              "$$hashKey": "object:3132"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1772379321705_1775799039",
+      "id": "paragraph_1772379321705_1775799039",
+      "dateCreated": "2026-03-01T15:35:21+0000",
+      "dateStarted": "2026-03-01T15:36:22+0000",
+      "dateFinished": "2026-03-01T15:36:23+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:2650"
+    },
+    {
+      "text": "%spark.pyspark\ndf = spark.createDataFrame([(1,), (2,), (3,)], [\"value\"])\ndf.selectExpr(\"value * 2 as value\").show()",
+      "user": "anonymous",
+      "dateUpdated": "2026-03-01T15:36:34+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-----+\n|value|\n+-----+\n|    2|\n|    4|\n|    6|\n+-----+\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "https://ui-c9qmpp3r5csais0rn98g-rc1b-dataproc-c-s71342hl0sgqlsci-35867.dataproc-ui.yandexcloud.net/jobs/job?id=5",
+              "$$hashKey": "object:3190"
+            },
+            {
+              "jobUrl": "https://ui-c9qmpp3r5csais0rn98g-rc1b-dataproc-c-s71342hl0sgqlsci-35867.dataproc-ui.yandexcloud.net/jobs/job?id=6",
+              "$$hashKey": "object:3191"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1772379382631_797021641",
+      "id": "paragraph_1772379382631_797021641",
+      "dateCreated": "2026-03-01T15:36:22+0000",
+      "dateStarted": "2026-03-01T15:36:34+0000",
+      "dateFinished": "2026-03-01T15:36:36+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:2651"
+    },
+    {
+      "text": "%spark.pyspark\ndf = spark.range(1_000_000)\ndf2 = df.filter(\"id % 2 = 0\")\nprint(\"Spark ещё ничего не считал\")",
+      "user": "anonymous",
+      "dateUpdated": "2026-03-01T15:41:22+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Spark ещё ничего не считал\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1772379394823_97386579",
+      "id": "paragraph_1772379394823_97386579",
+      "dateCreated": "2026-03-01T15:36:34+0000",
+      "dateStarted": "2026-03-01T15:41:22+0000",
+      "dateFinished": "2026-03-01T15:41:22+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:2652"
+    },
+    {
+      "text": "%spark.pyspark\ndf2.count()",
+      "user": "anonymous",
+      "dateUpdated": "2026-03-01T15:45:34+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "500000\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "https://ui-c9qmpp3r5csais0rn98g-rc1b-dataproc-c-s71342hl0sgqlsci-35867.dataproc-ui.yandexcloud.net/jobs/job?id=7",
+              "$$hashKey": "object:3305"
+            },
+            {
+              "jobUrl": "https://ui-c9qmpp3r5csais0rn98g-rc1b-dataproc-c-s71342hl0sgqlsci-35867.dataproc-ui.yandexcloud.net/jobs/job?id=8",
+              "$$hashKey": "object:3306"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1772379682623_1119795002",
+      "id": "paragraph_1772379682623_1119795002",
+      "dateCreated": "2026-03-01T15:41:22+0000",
+      "dateStarted": "2026-03-01T15:45:34+0000",
+      "dateFinished": "2026-03-01T15:45:36+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:2653"
+    },
+    {
+      "text": "%spark.pyspark\nfrom pyspark.sql import functions as F\ndata = [\n    (\"user1\",\"A\",100),\n    (\"user1\",\"B\",200),\n    (\"user2\",\"A\",50),\n]\ndf = spark.createDataFrame(data, [\"user\",\"category\",\"amount\"])\ndf.groupBy(\"user\").agg(F.sum(\"amount\")).show()",
+      "user": "anonymous",
+      "dateUpdated": "2026-03-01T15:45:59+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-----+-----------+\n| user|sum(amount)|\n+-----+-----------+\n|user1|        300|\n|user2|         50|\n+-----+-----------+\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "https://ui-c9qmpp3r5csais0rn98g-rc1b-dataproc-c-s71342hl0sgqlsci-35867.dataproc-ui.yandexcloud.net/jobs/job?id=9",
+              "$$hashKey": "object:3368"
+            },
+            {
+              "jobUrl": "https://ui-c9qmpp3r5csais0rn98g-rc1b-dataproc-c-s71342hl0sgqlsci-35867.dataproc-ui.yandexcloud.net/jobs/job?id=10",
+              "$$hashKey": "object:3369"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1772379934816_796640695",
+      "id": "paragraph_1772379934816_796640695",
+      "dateCreated": "2026-03-01T15:45:34+0000",
+      "dateStarted": "2026-03-01T15:45:59+0000",
+      "dateFinished": "2026-03-01T15:46:01+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:2654"
+    },
+    {
+      "text": "%spark.pyspark\nfrom pyspark.sql.functions import broadcast\nusers = spark.createDataFrame(\n    [(\"user1\",\"Berlin\"),(\"user2\",\"Munich\")],\n    [\"user\",\"city\"]\n)\norders = spark.createDataFrame(\n    [(\"user1\",100),(\"user2\",300)],\n    [\"user\",\"amount\"]\n)\nusers.join(orders, \"user\").show()\nbroadcast(users).join(orders, \"user\").show()",
+      "user": "anonymous",
+      "dateUpdated": "2026-03-01T15:46:14+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-----+------+------+\n| user|  city|amount|\n+-----+------+------+\n|user1|Berlin|   100|\n|user2|Munich|   300|\n+-----+------+------+\n\n+-----+------+------+\n| user|  city|amount|\n+-----+------+------+\n|user1|Berlin|   100|\n|user2|Munich|   300|\n+-----+------+------+\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "https://ui-c9qmpp3r5csais0rn98g-rc1b-dataproc-c-s71342hl0sgqlsci-35867.dataproc-ui.yandexcloud.net/jobs/job?id=11",
+              "$$hashKey": "object:3431"
+            },
+            {
+              "jobUrl": "https://ui-c9qmpp3r5csais0rn98g-rc1b-dataproc-c-s71342hl0sgqlsci-35867.dataproc-ui.yandexcloud.net/jobs/job?id=12",
+              "$$hashKey": "object:3432"
+            },
+            {
+              "jobUrl": "https://ui-c9qmpp3r5csais0rn98g-rc1b-dataproc-c-s71342hl0sgqlsci-35867.dataproc-ui.yandexcloud.net/jobs/job?id=13",
+              "$$hashKey": "object:3433"
+            },
+            {
+              "jobUrl": "https://ui-c9qmpp3r5csais0rn98g-rc1b-dataproc-c-s71342hl0sgqlsci-35867.dataproc-ui.yandexcloud.net/jobs/job?id=15",
+              "$$hashKey": "object:3434"
+            },
+            {
+              "jobUrl": "https://ui-c9qmpp3r5csais0rn98g-rc1b-dataproc-c-s71342hl0sgqlsci-35867.dataproc-ui.yandexcloud.net/jobs/job?id=16",
+              "$$hashKey": "object:3435"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1772379959140_1229208577",
+      "id": "paragraph_1772379959140_1229208577",
+      "dateCreated": "2026-03-01T15:45:59+0000",
+      "dateStarted": "2026-03-01T15:46:14+0000",
+      "dateFinished": "2026-03-01T15:46:16+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:2655"
+    },
+    {
+      "text": "%spark.pyspark\nfrom pyspark.sql.window import Window\nfrom pyspark.sql.functions import row_number, desc\ndf = spark.createDataFrame(\n    [(\"user1\",100),(\"user1\",200),(\"user1\",50)],\n    [\"user\",\"amount\"]\n)\nw = Window.partitionBy(\"user\").orderBy(desc(\"amount\"))\ndf.withColumn(\"rn\", row_number().over(w)).show()",
+      "user": "anonymous",
+      "dateUpdated": "2026-03-01T15:46:35+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-----+------+---+\n| user|amount| rn|\n+-----+------+---+\n|user1|   200|  1|\n|user1|   100|  2|\n|user1|    50|  3|\n+-----+------+---+\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "https://ui-c9qmpp3r5csais0rn98g-rc1b-dataproc-c-s71342hl0sgqlsci-35867.dataproc-ui.yandexcloud.net/jobs/job?id=17",
+              "$$hashKey": "object:3509"
+            },
+            {
+              "jobUrl": "https://ui-c9qmpp3r5csais0rn98g-rc1b-dataproc-c-s71342hl0sgqlsci-35867.dataproc-ui.yandexcloud.net/jobs/job?id=18",
+              "$$hashKey": "object:3510"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1772379974337_174427482",
+      "id": "paragraph_1772379974337_174427482",
+      "dateCreated": "2026-03-01T15:46:14+0000",
+      "dateStarted": "2026-03-01T15:46:35+0000",
+      "dateFinished": "2026-03-01T15:46:37+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:2656"
+    },
+    {
+      "text": "%spark.pyspark\nfrom pyspark.sql import functions as F\nbig = spark.range(5_000_000).withColumn(\"x\", (F.col(\"id\") % 10).cast(\"int\"))\nbig.cache()\nbig.count()\nbig.filter(\"x == 1\").count()\nbig.filter(\"x == 2\").count()",
+      "user": "anonymous",
+      "dateUpdated": "2026-03-01T15:46:49+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "500000\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "https://ui-c9qmpp3r5csais0rn98g-rc1b-dataproc-c-s71342hl0sgqlsci-35867.dataproc-ui.yandexcloud.net/jobs/job?id=19",
+              "$$hashKey": "object:3572"
+            },
+            {
+              "jobUrl": "https://ui-c9qmpp3r5csais0rn98g-rc1b-dataproc-c-s71342hl0sgqlsci-35867.dataproc-ui.yandexcloud.net/jobs/job?id=20",
+              "$$hashKey": "object:3573"
+            },
+            {
+              "jobUrl": "https://ui-c9qmpp3r5csais0rn98g-rc1b-dataproc-c-s71342hl0sgqlsci-35867.dataproc-ui.yandexcloud.net/jobs/job?id=21",
+              "$$hashKey": "object:3574"
+            },
+            {
+              "jobUrl": "https://ui-c9qmpp3r5csais0rn98g-rc1b-dataproc-c-s71342hl0sgqlsci-35867.dataproc-ui.yandexcloud.net/jobs/job?id=22",
+              "$$hashKey": "object:3575"
+            },
+            {
+              "jobUrl": "https://ui-c9qmpp3r5csais0rn98g-rc1b-dataproc-c-s71342hl0sgqlsci-35867.dataproc-ui.yandexcloud.net/jobs/job?id=23",
+              "$$hashKey": "object:3576"
+            },
+            {
+              "jobUrl": "https://ui-c9qmpp3r5csais0rn98g-rc1b-dataproc-c-s71342hl0sgqlsci-35867.dataproc-ui.yandexcloud.net/jobs/job?id=24",
+              "$$hashKey": "object:3577"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1772379995970_785208365",
+      "id": "paragraph_1772379995970_785208365",
+      "dateCreated": "2026-03-01T15:46:35+0000",
+      "dateStarted": "2026-03-01T15:46:49+0000",
+      "dateFinished": "2026-03-01T15:46:54+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:2657"
+    },
+    {
+      "text": "%spark.pyspark\npath = \"s3a://hadoop/demo/\"\ndf = spark.range(10000)\ndf.write.mode(\"overwrite\").parquet(path)\nspark.read.parquet(path).count()",
+      "user": "anonymous",
+      "dateUpdated": "2026-03-01T15:47:11+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Py4JJavaError: An error occurred while calling o299.parquet.\n: java.nio.file.AccessDeniedException: demo: PUT 0-byte object  on demo: com.amazonaws.services.s3.model.AmazonS3Exception: Access Denied (Service: Amazon S3; Status Code: 403; Error Code: AccessDenied; Request ID: ed1f70d866db394c; S3 Extended Request ID: null; Proxy: null), S3 Extended Request ID: null:AccessDenied\n\tat org.apache.hadoop.fs.s3a.S3AUtils.translateException(S3AUtils.java:255)\n\tat org.apache.hadoop.fs.s3a.Invoker.once(Invoker.java:119)\n\tat org.apache.hadoop.fs.s3a.Invoker.lambda$retry$4(Invoker.java:322)\n\tat org.apache.hadoop.fs.s3a.Invoker.retryUntranslated(Invoker.java:414)\n\tat org.apache.hadoop.fs.s3a.Invoker.retry(Invoker.java:318)\n\tat org.apache.hadoop.fs.s3a.Invoker.retry(Invoker.java:293)\n\tat org.apache.hadoop.fs.s3a.S3AFileSystem.createEmptyObject(S3AFileSystem.java:4532)\n\tat org.apache.hadoop.fs.s3a.S3AFileSystem.access$1900(S3AFileSystem.java:259)\n\tat org.apache.hadoop.fs.s3a.S3AFileSystem$MkdirOperationCallbacksImpl.createFakeDirectory(S3AFileSystem.java:3461)\n\tat org.apache.hadoop.fs.s3a.impl.MkdirOperation.execute(MkdirOperation.java:121)\n\tat org.apache.hadoop.fs.s3a.impl.MkdirOperation.execute(MkdirOperation.java:45)\n\tat org.apache.hadoop.fs.s3a.impl.ExecutingStoreOperation.apply(ExecutingStoreOperation.java:76)\n\tat org.apache.hadoop.fs.statistics.impl.IOStatisticsBinding.lambda$trackDurationOfOperation$5(IOStatisticsBinding.java:499)\n\tat org.apache.hadoop.fs.statistics.impl.IOStatisticsBinding.trackDuration(IOStatisticsBinding.java:444)\n\tat org.apache.hadoop.fs.s3a.S3AFileSystem.trackDurationAndSpan(S3AFileSystem.java:2337)\n\tat org.apache.hadoop.fs.s3a.S3AFileSystem.trackDurationAndSpan(S3AFileSystem.java:2356)\n\tat org.apache.hadoop.fs.s3a.S3AFileSystem.mkdirs(S3AFileSystem.java:3428)\n\tat org.apache.hadoop.fs.FileSystem.mkdirs(FileSystem.java:2388)\n\tat org.apache.hadoop.fs.s3a.commit.AbstractS3ACommitter.setupJob(AbstractS3ACommitter.java:544)\n\tat org.apache.hadoop.fs.s3a.commit.magic.MagicS3GuardCommitter.setupJob(MagicS3GuardCommitter.java:102)\n\tat org.apache.spark.internal.io.HadoopMapReduceCommitProtocol.setupJob(HadoopMapReduceCommitProtocol.scala:188)\n\tat org.apache.spark.sql.execution.datasources.FileFormatWriter$.write(FileFormatWriter.scala:219)\n\tat org.apache.spark.sql.execution.datasources.InsertIntoHadoopFsRelationCommand.run(InsertIntoHadoopFsRelationCommand.scala:186)\n\tat org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult$lzycompute(commands.scala:113)\n\tat org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult(commands.scala:111)\n\tat org.apache.spark.sql.execution.command.DataWritingCommandExec.executeCollect(commands.scala:125)\n\tat org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:98)\n\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:109)\n\tat org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:169)\n\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:95)\n\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:779)\n\tat org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:64)\n\tat org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)\n\tat org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:94)\n\tat org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:584)\n\tat org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(TreeNode.scala:176)\n\tat org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:584)\n\tat org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:30)\n\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)\n\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)\n\tat org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:30)\n\tat org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:30)\n\tat org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:560)\n\tat org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:94)\n\tat org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:81)\n\tat org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:79)\n\tat org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:116)\n\tat org.apache.spark.sql.DataFrameWriter.runCommand(DataFrameWriter.scala:860)\n\tat org.apache.spark.sql.DataFrameWriter.saveToV1Source(DataFrameWriter.scala:390)\n\tat org.apache.spark.sql.DataFrameWriter.saveInternal(DataFrameWriter.scala:363)\n\tat org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:239)\n\tat org.apache.spark.sql.DataFrameWriter.parquet(DataFrameWriter.scala:793)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)\n\tat py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)\n\tat py4j.Gateway.invoke(Gateway.java:282)\n\tat py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)\n\tat py4j.commands.CallCommand.execute(CallCommand.java:79)\n\tat py4j.GatewayConnection.run(GatewayConnection.java:238)\n\tat java.lang.Thread.run(Thread.java:750)\nCaused by: com.amazonaws.services.s3.model.AmazonS3Exception: Access Denied (Service: Amazon S3; Status Code: 403; Error Code: AccessDenied; Request ID: ed1f70d866db394c; S3 Extended Request ID: null; Proxy: null), S3 Extended Request ID: null\n\tat com.amazonaws.http.AmazonHttpClient$RequestExecutor.handleErrorResponse(AmazonHttpClient.java:1819)\n\tat com.amazonaws.http.AmazonHttpClient$RequestExecutor.handleServiceErrorResponse(AmazonHttpClient.java:1403)\n\tat com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeOneRequest(AmazonHttpClient.java:1372)\n\tat com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeHelper(AmazonHttpClient.java:1145)\n\tat com.amazonaws.http.AmazonHttpClient$RequestExecutor.doExecute(AmazonHttpClient.java:802)\n\tat com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeWithTimer(AmazonHttpClient.java:770)\n\tat com.amazonaws.http.AmazonHttpClient$RequestExecutor.execute(AmazonHttpClient.java:744)\n\tat com.amazonaws.http.AmazonHttpClient$RequestExecutor.access$500(AmazonHttpClient.java:704)\n\tat com.amazonaws.http.AmazonHttpClient$RequestExecutionBuilderImpl.execute(AmazonHttpClient.java:686)\n\tat com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:550)\n\tat com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:530)\n\tat com.amazonaws.services.s3.AmazonS3Client.invoke(AmazonS3Client.java:5437)\n\tat com.amazonaws.services.s3.AmazonS3Client.invoke(AmazonS3Client.java:5384)\n\tat com.amazonaws.services.s3.AmazonS3Client.access$300(AmazonS3Client.java:421)\n\tat com.amazonaws.services.s3.AmazonS3Client$PutObjectStrategy.invokeServiceCall(AmazonS3Client.java:6508)\n\tat com.amazonaws.services.s3.AmazonS3Client.uploadObject(AmazonS3Client.java:1856)\n\tat com.amazonaws.services.s3.AmazonS3Client.putObject(AmazonS3Client.java:1816)\n\tat org.apache.hadoop.fs.s3a.S3AFileSystem.lambda$putObjectDirect$17(S3AFileSystem.java:2877)\n\tat org.apache.hadoop.fs.statistics.impl.IOStatisticsBinding.trackDurationOfSupplier(IOStatisticsBinding.java:604)\n\tat org.apache.hadoop.fs.s3a.S3AFileSystem.putObjectDirect(S3AFileSystem.java:2874)\n\tat org.apache.hadoop.fs.s3a.S3AFileSystem.lambda$createEmptyObject$32(S3AFileSystem.java:4534)\n\tat org.apache.hadoop.fs.s3a.Invoker.once(Invoker.java:117)\n\t... 61 more\n\n(<class 'py4j.protocol.Py4JJavaError'>, Py4JJavaError('An error occurred while calling o299.parquet.\\n', JavaObject id=o300), <traceback object at 0x7fd1b33de400>)"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1772380009773_530243558",
+      "id": "paragraph_1772380009773_530243558",
+      "dateCreated": "2026-03-01T15:46:49+0000",
+      "dateStarted": "2026-03-01T15:47:11+0000",
+      "dateFinished": "2026-03-01T15:47:14+0000",
+      "status": "ERROR",
+      "$$hashKey": "object:2658"
+    },
+    {
+      "text": "%spark.pyspark\n",
+      "user": "anonymous",
+      "dateUpdated": "2026-03-01T15:47:11+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1772380031238_1023619889",
+      "id": "paragraph_1772380031238_1023619889",
+      "dateCreated": "2026-03-01T15:47:11+0000",
+      "status": "READY",
+      "$$hashKey": "object:2659"
+    }
+  ],
+  "name": "Zeppelin Test 1",
+  "id": "2MJJ57FQ5",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.10.1",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "default",
+    "personalizedMode": "false"
+  },
+  "info": {},
+  "path": "/Zeppelin Test 1"
+}
