@@ -10,7 +10,7 @@ services:
       POSTGRES_PASSWORD: airflow
       POSTGRES_INITDB_ARGS: "-E UTF8"
     ports:
-      - "5432:5432"
+      - "5434:5432"
     volumes:
       # - ./init/init.sql:/docker-entrypoint-initdb.d/init.sql
       - postgres_data:/var/lib/postgresql/data
@@ -53,9 +53,14 @@ services:
     volumes:
       - ./airflow/dags:/opt/airflow/dags
       - ./airflow/logs:/opt/airflow/logs
+      - ./requirements.txt:/requirements.txt
     ports:
       - "8080:8080"
-    command: webserver
+    command: >
+      bash -c "
+      pip install --no-cache-dir -r /requirements.txt &&
+      airflow webserver
+      "
     healthcheck:
       test: ["CMD", "airflow", "db", "check"]
       interval: 10s
@@ -75,7 +80,12 @@ services:
     volumes:
       - ./airflow/dags:/opt/airflow/dags
       - ./airflow/logs:/opt/airflow/logs
-    command: scheduler
+      - ./requirements.txt:/requirements.txt
+    command: >
+      bash -c "
+      pip install --no-cache-dir -r /requirements.txt &&
+      airflow scheduler
+      "
     restart: unless-stopped
  
   nifi:
@@ -90,7 +100,24 @@ services:
       - nifi_logs:/opt/nifi/logs
       - nifi_config:/opt/nifi/conf
     restart: unless-stopped
- 
+
+  mongodb:
+    image: mongo:8.0
+    container_name: de-mongodb
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: password
+    volumes:
+      - mongodb:/data/db
+    restart: unless-stopped
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh localhost:27017/test --quiet
+      interval: 10s
+      timeout: 10s
+      retries: 5
+
   jupyter:
     image: continuumio/anaconda3
     container_name: de-jupyter
@@ -112,3 +139,4 @@ volumes:
   nifi_data:
   nifi_logs:
   nifi_config:
+  mongodb:
